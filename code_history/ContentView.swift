@@ -31,42 +31,22 @@ struct ContentView: View {
                     Button(action: {
                         print("Tapped on Choice 1")
                     }, label: {
-                        Text(question.possibleAnswers[0])
-                            .font(.body)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                            .padding()
-                            .border(accentColor, width: 4)
+                        ChoiceTextView(choiceText: question.possibleAnswers[0])
                     })
                     Button(action: {
                         print("Tapped on Choice 2")
                     }, label: {
-                        Text(question.possibleAnswers[1])
-                            .font(.body)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                            .padding()
-                            .border(accentColor, width: 4)
+                        ChoiceTextView(choiceText: question.possibleAnswers[1])
                     })
                     Button(action: {
                         print("Tapped on Choice 3")
                     }, label: {
-                        Text(question.possibleAnswers[2])
-                            .font(.body)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                            .padding()
-                            .border(accentColor, width: 4)
+                        ChoiceTextView(choiceText: question.possibleAnswers[2])
                     })
                     Button(action: {
                         print("Tapped on Choice 4")
                     }, label: {
-                        Text(question.possibleAnswers[3])
-                            .font(.body)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                            .padding()
-                            .border(accentColor, width: 4)
+                        ChoiceTextView(choiceText: question.possibleAnswers[3])
                     })
                 }
             }
