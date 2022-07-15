@@ -11,6 +11,7 @@
 		33E647C82880947A00496B4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E647C72880947A00496B4E /* ContentView.swift */; };
 		33E647CA2880947A00496B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E647C92880947A00496B4E /* Assets.xcassets */; };
 		33E647CD2880947A00496B4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E647CC2880947A00496B4E /* Preview Assets.xcassets */; };
+		33E647F22881085000496B4E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E647F12881085000496B4E /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		33E647C72880947A00496B4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33E647C92880947A00496B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E647CC2880947A00496B4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33E647F12881085000496B4E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				33E647C52880947A00496B4E /* code_historyApp.swift */,
 				33E647C72880947A00496B4E /* ContentView.swift */,
+				33E647F12881085000496B4E /* Question.swift */,
 				33E647C92880947A00496B4E /* Assets.xcassets */,
 				33E647CB2880947A00496B4E /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E647F22881085000496B4E /* Question.swift in Sources */,
 				33E647C82880947A00496B4E /* ContentView.swift in Sources */,
 				33E647C62880947A00496B4E /* code_historyApp.swift in Sources */,
 			);

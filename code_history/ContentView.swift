@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    let question = Question(
+        questionText: "What was the first computer bug?",
+        possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"],
+        correctAnswerIndex: 2)
     let mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
     let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
     var body: some View {
@@ -18,7 +22,7 @@ struct ContentView: View {
                     .font(.callout)
                     .multilineTextAlignment(.leading)
                     .padding()
-                Text("What was the first computer bug?")
+                Text(question.questionText)
                     .font(.largeTitle)
                     .bold()
                     .multilineTextAlignment(.leading)
@@ -27,7 +31,7 @@ struct ContentView: View {
                     Button(action: {
                         print("Tapped on Choice 1")
                     }, label: {
-                        Text("Ant")
+                        Text(question.possibleAnswers[0])
                             .font(.body)
                             .bold()
                             .multilineTextAlignment(.center)
@@ -37,7 +41,7 @@ struct ContentView: View {
                     Button(action: {
                         print("Tapped on Choice 2")
                     }, label: {
-                        Text("Beetle")
+                        Text(question.possibleAnswers[1])
                             .font(.body)
                             .bold()
                             .multilineTextAlignment(.center)
@@ -47,7 +51,7 @@ struct ContentView: View {
                     Button(action: {
                         print("Tapped on Choice 3")
                     }, label: {
-                        Text("Moth")
+                        Text(question.possibleAnswers[2])
                             .font(.body)
                             .bold()
                             .multilineTextAlignment(.center)
@@ -57,7 +61,7 @@ struct ContentView: View {
                     Button(action: {
                         print("Tapped on Choice 4")
                     }, label: {
-                        Text("Fly")
+                        Text(question.possibleAnswers[3])
                             .font(.body)
                             .bold()
                             .multilineTextAlignment(.center)
