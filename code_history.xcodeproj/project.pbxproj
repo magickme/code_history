@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336798FA2886670C0083FDD8 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336798F92886670C0083FDD8 /* QuestionView.swift */; };
 		33DDD43528860EC800F5CFAD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD43428860EC800F5CFAD /* Game.swift */; };
 		33DDD47228864EA600F5CFAD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD47128864EA600F5CFAD /* WelcomeView.swift */; };
 		33DDD4742886513A00F5CFAD /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4732886513A00F5CFAD /* GameColor.swift */; };
 		33DDD4762886552900F5CFAD /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD4752886552900F5CFAD /* BottomTextView.swift */; };
+		33DDD47D28865B3000F5CFAD /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDD47C28865B3000F5CFAD /* GameViewModel.swift */; };
 		33E647C62880947A00496B4E /* code_historyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E647C52880947A00496B4E /* code_historyApp.swift */; };
 		33E647C82880947A00496B4E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E647C72880947A00496B4E /* GameView.swift */; };
 		33E647CA2880947A00496B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E647C92880947A00496B4E /* Assets.xcassets */; };
@@ -20,10 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		336798F92886670C0083FDD8 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		33DDD43428860EC800F5CFAD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		33DDD47128864EA600F5CFAD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		33DDD4732886513A00F5CFAD /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
 		33DDD4752886552900F5CFAD /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
+		33DDD47C28865B3000F5CFAD /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		33E647C22880947A00496B4E /* code_history.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = code_history.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E647C52880947A00496B4E /* code_historyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code_historyApp.swift; sourceTree = "<group>"; };
 		33E647C72880947A00496B4E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -61,8 +65,17 @@
 				33E647F3288108DF00496B4E /* ChoiceTextView.swift */,
 				33E647C72880947A00496B4E /* GameView.swift */,
 				33DDD4752886552900F5CFAD /* BottomTextView.swift */,
+				336798F92886670C0083FDD8 /* QuestionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		33DDD47728865ADD00F5CFAD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				33DDD47C28865B3000F5CFAD /* GameViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		33E647B92880947900496B4E = {
@@ -84,6 +97,7 @@
 		33E647C42880947A00496B4E /* code_history */ = {
 			isa = PBXGroup;
 			children = (
+				33DDD47728865ADD00F5CFAD /* ViewModels */,
 				33DDD43728860F0200F5CFAD /* Views */,
 				33DDD43628860EF000F5CFAD /* Models */,
 				33E647C52880947A00496B4E /* code_historyApp.swift */,
@@ -171,6 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336798FA2886670C0083FDD8 /* QuestionView.swift in Sources */,
+				33DDD47D28865B3000F5CFAD /* GameViewModel.swift in Sources */,
 				33E647F22881085000496B4E /* Question.swift in Sources */,
 				33DDD47228864EA600F5CFAD /* WelcomeView.swift in Sources */,
 				33DDD43528860EC800F5CFAD /* Game.swift in Sources */,
@@ -307,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"code_history/Preview Content\"";
+				DEVELOPMENT_TEAM = 484F7JYDYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -335,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"code_history/Preview Content\"";
+				DEVELOPMENT_TEAM = 484F7JYDYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
