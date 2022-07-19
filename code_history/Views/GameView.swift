@@ -22,9 +22,12 @@ struct GameView: View {
         QuestionView(question: viewModel.currentQuestion)
       }
     }
-    .foregroundColor(.white)
-    .navigationBarHidden(true) // New line
-    .environmentObject(viewModel)
+    .background(
+    NavigationLink(destination: ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses,
+                 incorrectGuesses: viewModel.incorrectGuesses)),
+                        isActive: .constant(viewModel.gameIsOver),
+                            label: { EmptyView() })
+           )
   }
 }
 
